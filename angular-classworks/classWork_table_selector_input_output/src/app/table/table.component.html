@@ -1,0 +1,17 @@
+<p>
+  table works!
+</p>
+<table>
+  <tr>
+    <th *ngFor="let k of keys">{{k}}</th>
+  </tr>
+  <tr *ngFor="let car of garage">
+    <!-- for each object in table-->
+    <td *ngFor="let k of keys">{{car[k]}}</td>
+    <!--we ask it to give value for each key-->
+  </tr>
+<br>
+  <tr *ngFor="let map of garage">
+    <td *ngFor="let key of keys">{{map[key]}}</td>
+  </tr>
+</table>

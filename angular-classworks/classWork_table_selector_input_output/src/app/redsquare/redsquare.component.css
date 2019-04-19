@@ -1,0 +1,21 @@
+.rs {
+  position: absolute;
+  width:  300px; height: 300px;
+  left: 150px; right: 150px;
+}
+
+.r {
+  background-color: red;
+}
+
+.w {
+  background-color: white;
+}
+
+.b {
+  background-color: black;
+}
+
+.bord{
+  border: 20px solid darkgrey;
+}

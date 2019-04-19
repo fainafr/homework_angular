@@ -1,0 +1,11 @@
+<p>
+  ngif works!
+</p>
+<button (click) = "buttonHandler()"> Toggle </button> <!--event and event handler points to the instance methods-->
+<button (click) = "genderHandler()"> Toggle Gender </button>
+
+<span *ngIf = "condition"> "this condition appears" </span> <!--directive points to component instance variable-->
+<span *ngIf = "gender; then male; else female;"> </span> <!-- nice language -->
+
+<ng-template #male> I am a boy </ng-template> <!--what is this? behaves like situational HTML picec -->
+<ng-template #female> I am a girl </ng-template>

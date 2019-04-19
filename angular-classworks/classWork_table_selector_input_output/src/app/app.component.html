@@ -1,0 +1,13 @@
+<!-- training on input-output-decoration-->
+
+<app-select [myArray]="colors" (selectChoice)="choiceHandler($event)"> </app-select>
+<!--<app-select [myArray]="cities"> </app-select>-->
+<!--<app-select [myArray]="games"> </app-select>-->
+<!--app-select myArray: array is there. is it input?-->
+<!--app-component namespace: colors or other-->
+<!--(selectChoice) looks like an output-->
+<!--choiceHandler  takes $event: looks like an event handler-->
+
+
+<app-redsquare [selectedColor]="selectedColor"></app-redsquare>
+<!-- TODO: change color on click -->

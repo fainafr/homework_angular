@@ -1,0 +1,12 @@
+<p>
+  Creating dropdown list in A2 <!--  TODO: pls dynamic header-->
+</p>
+<select (change)="sendChoice()" [(ngModel)] = "bananaValue">
+  <!--(change) is some kind of event TODO: clarify-->
+  <!--  banana in=the box in the select; TODO: clarify-->
+  <option *ngFor="let elem of myArray">{{elem}}</option>
+  <!-- myArray must be array-like-->
+  <!-- options must be in select tag-->
+
+</select>
+

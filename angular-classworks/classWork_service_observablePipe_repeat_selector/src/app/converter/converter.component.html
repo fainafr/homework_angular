@@ -1,0 +1,9 @@
+<table>
+  <tr>
+    <td>  <input [(ngModel)] = "valueFrom"/> </td>
+    <td><app-select [myArray]="currencies" (selectChoice) = "setFrom($event)"></app-select></td>
+    <td>{{getToValue() | number : '.4-4'}}</td>
+    <td></td>
+    <app-select [myArray]="currencies" (selectChoice) = "setTo($event)"> </app-select>
+  </tr>
+</table>

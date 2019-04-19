@@ -1,0 +1,40 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<div class="container">
+	<form>
+		<div class="form-group">
+			<h1 class="text-center text-primary">Todo App</h1>
+			<div class="input-group-prepend">
+				<input type="text" #todo class="form-control" placeholder="Add Todo"
+					name="todo" ngModel> <!-- what ngModel does here?  -->
+				<span class="input-group-text"
+					(click)="addTodo(todo.value)"><i class="material-icons">Add</i>
+				</span>
+			</div>
+			<div class="data">
+				<ul class="list-instyled">
+					<li *ngFor="let todo of todoArray">
+					        {{todo}}
+					    <i (click)="deleteItem(todo)" class="material-icons">
+					        delete
+					    </i>
+					</li>
+					<!-- directive into interpolation  -->
+				</ul>
+			</div>
+		</div>
+	</form>
+	<div>
+		<a href="https://medium.freecodecamp.org/learn-how-to-create-your-first-angular-app-in-20-min-146201d9b5a7">
+			Nice Tutorial [stopped on entering to add items] </a>
+			<br>
+		<a href="https://drive.google.com/drive/u/0/folders/1k5e5LAUar6DswhifK4hvxVTqS68JKPX9">
+			Project on Drive 
+		</a>
+			
+	</div>
+</div>
+
+<router-outlet></router-outlet>
+
+

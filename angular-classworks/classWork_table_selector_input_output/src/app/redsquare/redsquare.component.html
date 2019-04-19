@@ -1,0 +1,10 @@
+<!--<div class ="rs" (click) = "buttonHandler()" [ngStyle]="{'background-color':clr}"></div>-->
+<!-- directive ngStyle-->
+
+
+<div class = "rs" (click) = "selectedColorSetter()" [ngClass] = "{
+  'r' : rFlag,
+  'w' : wFlag,
+  'b' : bFlag,
+  'bord' : true
+}"></div>
